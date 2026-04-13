@@ -1,4 +1,4 @@
-import { Chrome, Globe, Code, Package, CheckCircle2, Settings } from "lucide-react";
+import { Chrome, Globe, Code, Package, CheckCircle2, Settings, Zap, Network, Smartphone, BarChart3, FileText, GitBranch } from "lucide-react";
 
 const integrations = [
   {
@@ -25,7 +25,7 @@ const integrations = [
     name: "Cypress",
     description: "E2E testing framework",
     category: "Automation",
-    status: "inactive",
+    status: "active",
     version: "13.6.6",
     icon: Code,
     color: "text-info",
@@ -41,13 +41,97 @@ const integrations = [
     color: "text-destructive",
     bgColor: "bg-destructive/20"
   },
+  {
+    name: "Postman",
+    description: "API testing platform",
+    category: "API Testing",
+    status: "active",
+    version: "10.24.0",
+    icon: Network,
+    color: "text-warning",
+    bgColor: "bg-warning/20"
+  },
+  {
+    name: "K6",
+    description: "Load testing tool",
+    category: "Performance",
+    status: "active",
+    version: "0.49.0",
+    icon: Zap,
+    color: "text-primary",
+    bgColor: "bg-primary/20"
+  },
+  {
+    name: "Appium",
+    description: "Mobile automation framework",
+    category: "Mobile",
+    status: "active",
+    version: "2.4.1",
+    icon: Smartphone,
+    color: "text-success",
+    bgColor: "bg-success/20"
+  },
+  {
+    name: "TestRail",
+    description: "Test case management",
+    category: "Management",
+    status: "active",
+    version: "7.8.0",
+    icon: BarChart3,
+    color: "text-info",
+    bgColor: "bg-info/20"
+  },
+  {
+    name: "Allure",
+    description: "Test reporting framework",
+    category: "Reporting",
+    status: "active",
+    version: "2.26.0",
+    icon: FileText,
+    color: "text-primary",
+    bgColor: "bg-primary/20"
+  },
+  {
+    name: "Cucumber",
+    description: "BDD testing framework",
+    category: "BDD",
+    status: "inactive",
+    version: "9.6.0",
+    icon: Package,
+    color: "text-success",
+    bgColor: "bg-success/20"
+  },
+  {
+    name: "JMeter",
+    description: "Performance testing tool",
+    category: "Performance",
+    status: "active",
+    version: "5.6.3",
+    icon: Zap,
+    color: "text-destructive",
+    bgColor: "bg-destructive/20"
+  },
+  {
+    name: "SonarQube",
+    description: "Code quality analysis",
+    category: "Quality",
+    status: "active",
+    version: "10.4.0",
+    icon: GitBranch,
+    color: "text-info",
+    bgColor: "bg-info/20"
+  },
 ];
 
 const recentActivity = [
   { tool: "Playwright", action: "Test suite executed", time: "5m ago", success: true },
-  { tool: "Selenium", action: "Configuration updated", time: "12m ago", success: true },
-  { tool: "Playwright", action: "New test created", time: "1h ago", success: true },
-  { tool: "Jest", action: "Unit tests passed", time: "2h ago", success: true },
+  { tool: "K6", action: "Load test completed - 10k VUs", time: "8m ago", success: true },
+  { tool: "Postman", action: "Collection synced", time: "12m ago", success: true },
+  { tool: "Appium", action: "Mobile test on iOS completed", time: "15m ago", success: true },
+  { tool: "Selenium", action: "Configuration updated", time: "22m ago", success: true },
+  { tool: "Allure", action: "Report generated", time: "45m ago", success: true },
+  { tool: "Jest", action: "Unit tests passed - 342 tests", time: "1h ago", success: true },
+  { tool: "JMeter", action: "Performance baseline established", time: "2h ago", success: true },
 ];
 
 export function Tools() {
@@ -58,7 +142,7 @@ export function Tools() {
         <p className="text-muted-foreground">Manage testing frameworks and third-party integrations</p>
       </div>
 
-      <div className="grid grid-cols-2 gap-6">
+      <div className="grid grid-cols-3 gap-6">
         {integrations.map((integration) => {
           const Icon = integration.icon;
 

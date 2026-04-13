@@ -1,5 +1,5 @@
 import { Outlet, Link, useLocation } from "react-router";
-import { Bot, Workflow, Network, Brain, Wrench, LayoutDashboard } from "lucide-react";
+import { Bot, Workflow, Network, Brain, Wrench, LayoutDashboard, Smartphone, GitBranch, FileText, Users, Clock } from "lucide-react";
 
 export function Layout() {
   const location = useLocation();
@@ -10,6 +10,11 @@ export function Layout() {
     { name: "Automation", path: "/automation", icon: Workflow },
     { name: "API Testing", path: "/api-testing", icon: Network },
     { name: "LLM Evaluation", path: "/llm-evaluation", icon: Brain },
+    { name: "Mobile Testing", path: "/mobile", icon: Smartphone },
+    { name: "CI/CD", path: "/ci-cd", icon: GitBranch },
+    { name: "Reports", path: "/reports", icon: FileText },
+    { name: "Team", path: "/team", icon: Users },
+    { name: "Schedule", path: "/schedule", icon: Clock },
     { name: "Tools & Integrations", path: "/tools", icon: Wrench },
   ];
 
