@@ -16,7 +16,7 @@ interface CachedData {
 }
 
 class StorageService {
-  private readonly STORAGE_PREFIX = 'testhub_';
+  private readonly STORAGE_PREFIX = 'qualityforge_';
   private readonly CACHE_PREFIX = 'cache_';
 
   // User Preferences

@@ -1,11 +1,11 @@
 // Application configuration constants
 
 export const APP_CONFIG = {
-  name: 'TestHub',
+  name: 'QualityForge',
   version: '1.0.0',
   description: 'Enterprise SaaS Testing Platform',
-  apiUrl: 'https://api.testhub.com/v1',
-  wsUrl: 'wss://ws.testhub.com',
+  apiUrl: 'https://api.qualityforge.com/v1',
+  wsUrl: 'wss://ws.qualityforge.com',
 } as const;
 
 export const MODULES = {
@@ -220,10 +220,10 @@ export const WEBSOCKET_EVENTS = {
 } as const;
 
 export const LOCAL_STORAGE_KEYS = {
-  AUTH_TOKEN: 'testhub_auth_token',
-  USER_DATA: 'testhub_user',
-  PREFERENCES: 'testhub_preferences',
-  TEST_HISTORY: 'testhub_test_history',
-  RECENT_SEARCHES: 'testhub_recent_searches',
-  SAVED_FILTERS: 'testhub_saved_filters',
+  AUTH_TOKEN: 'qualityforge_auth_token',
+  USER_DATA: 'qualityforge_user',
+  PREFERENCES: 'qualityforge_preferences',
+  TEST_HISTORY: 'qualityforge_test_history',
+  RECENT_SEARCHES: 'qualityforge_recent_searches',
+  SAVED_FILTERS: 'qualityforge_saved_filters',
 } as const;

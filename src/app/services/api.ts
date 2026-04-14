@@ -37,7 +37,7 @@ class TestHubAPI {
     await delay(500);
 
     // Mock authentication
-    const mockToken = `testhub_${btoa(email)}_${Date.now()}`;
+    const mockToken = `qf_${btoa(email)}_${Date.now()}`;
     this.authToken = mockToken;
 
     return {

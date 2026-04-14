@@ -1,4 +1,4 @@
-import { createBrowserRouter } from "react-router";
+import { createBrowserRouter, Navigate } from "react-router";
 import { Layout } from "./components/Layout";
 import { Dashboard } from "./components/Dashboard";
 import { AITesting } from "./components/AITesting";
@@ -11,8 +11,14 @@ import { MobileTesting } from "./components/MobileTesting";
 import { Reports } from "./components/Reports";
 import { Team } from "./components/Team";
 import { Schedule } from "./components/Schedule";
+import { Settings } from "./components/Settings";
+import { Login } from "./components/Login";
 
 export const router = createBrowserRouter([
+  {
+    path: "/login",
+    Component: Login,
+  },
   {
     path: "/",
     Component: Layout,
@@ -28,6 +34,7 @@ export const router = createBrowserRouter([
       { path: "team", Component: Team },
       { path: "schedule", Component: Schedule },
       { path: "tools", Component: Tools },
+      { path: "settings", Component: Settings },
     ],
   },
 ]);
